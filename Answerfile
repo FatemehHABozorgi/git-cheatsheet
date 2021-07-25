@@ -1,0 +1,81 @@
+1. Why do we use version control tools such as Git?
+
+Version control tools helps developers move faster and allows software teams to preserve efficiency and agility as the team scales to include more developers.
+VCS are sometimes known as SCM (Source Code Management) tools or RCS (Revision Control System). One of the most popular VCS tools in use today is called Git.
+Git manages the source code of a program and This is a useful tool for maintaining, expanding and versioning a project.
+
+2.What is the repository? And a good repository includes which important files? 
+
+The repository is like a data structure used by VCS to store metadata for a set of files and directories. 
+It contains the collection of the files as well as the history of changes made to those files. References, Releases, Tags, Commits, Branches, etc.
+Repository in Git is considered as your project folder. A repository has all the project-related data. Distinct projects have distinct repositories.
+Every repository must include these 3 files: README.md, .gitignore, LICENSE.
+
+3.What does a valid README.md contain?
+
+The README.md file must contain the first & second parts, the third part is optional.
+1.A brief description of the project. What is the project going to do and what's made for?
+2.How can someone use this project? Installation, Configuration, Removal, Executing and etc.
+3.If someone desire to contribute to this project, How they can do it.
+
+4.What does the git clone command do?
+
+git clone is primarily used to point to an existing repo and make a clone or copy of that repo in a new directory, at another location. 
+The original repository can be located on the local filesystem or on remote machine-accessible supported protocols. 
+The git clone command copies an existing Git repository to our system.
+
+5.which command should be run to update the local repository with the remote repository?
+
+#git pull
+
+6.What is the difference between reset, revert, checkout commands?
+
+git revert - This command creates a new commit that undoes the changes from a previous commit. This command adds new history to the project (it doesn't modify existing history).
+
+git checkout - This command checks-out content from the repository and puts it in your working tree. It can also have other effects, depending on how the command was invoked. 
+For instance, it can also change which branch you are currently working on. This command doesn't make any changes to the history.
+
+git reset - This command is a little more complicated. It actually does a couple of different things depending on how it is invoked. 
+It modifies the index (the so-called "staging area"). Or on the commit-level, resetting is a way to move the tip of a branch to a different commit.
+This command may alter existing history (by changing the commit that a branch references). 
+
+7.What is the difference between merge & rebase commands?
+Git rebase and merge both integrate changes from one branch into another. Git rebase moves a feature branch into a master. 
+Git merge adds a new commit, preserving the history. 
+We can use these commands to produce the changes from remote/tracking ref to the working tree But using which commands depends on the situation.
+
+8.Which command is used for viewing the commits history?
+
+#git log
+
+9.If we want to view the changes of a file, which command do we use?
+
+#git diff
+
+10.What is the usage of the Tag? How can we build a tag?
+
+Tagging is generally used to capture a point in history that is used for a marked version release (i.e. v1. 0.1). 
+A tag is like a branch that doesn't change. Unlike branches, tags, after being created, have no further history of commits.
+#git tag v1.0.1 ----> the version of the project is 1.0.1 and based on the version, We can have a release.
+
+11.What is the process of involving in a project that manages via Git?
+
+Change the current working directory to the location where you want the cloned directory.
+git clone <project address from github>
+git diff
+git show HEAD
+git branch
+git branch test
+git checkout test ---> Make the fix
+git merge test
+git commit
+git tag v1.0
+git push
+
+12.What is the usage of the branches? and how can we merge them?
+A branch in Git is a way to keep developing and coding a new feature or modification to the software and still not affecting the main part of the project. 
+We can also say that branches create another line of development in the project.
+The default branch name in Git is master. As you start making commits, you’re given a master branch that points to the last commit you made. 
+Every time you commit, the master branch pointer moves forward automatically.
+git merge <branch>
+
