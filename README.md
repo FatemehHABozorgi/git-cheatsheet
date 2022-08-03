@@ -1,10 +1,10 @@
 # git-cheatsheet
 
-This is a practice about learning the Git tools, for the DevOps class with Saeid Bostandoust.
+This is a practice of learning the Git tools, for the DevOps class with Saeid Bostandoust.
 
 This project contains a file to answer a dozen questions regarding Git.
 
-Practice name: dws-dev-004-Working with git
+Practice Name: DWS-dev-004-Working with git
 
 Group class: Indium
 
